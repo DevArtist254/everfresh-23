@@ -1,0 +1,5 @@
+{
+     "prettier.htmlWhitespaceSensitivity": "ignore",
+     "prettier.tabWidth": 3,
+     "prettier.printWidth": 80
+}

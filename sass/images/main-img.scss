@@ -1,0 +1,70 @@
+.img {
+    width: 50%;
+}
+
+.main-content {
+
+    &__officeImg{
+        width: 1000px;
+        height: 1000px;
+    }
+
+    &__waterImg {
+        width: 732px;
+        height: 650px;
+    }
+}
+
+.main-index {
+    position: relative;
+    height: 100vh;
+
+    &__vw {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: end;
+    }
+}
+
+.main-video {
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.mCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-right: 116px;
+}
+
+.main-content {
+    background-image: url("./Assests/Images/bdg-1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 100vh;
+   
+    &__vw {
+        width: 80%;
+        margin: 0 auto;
+    }
+    &__content {
+        width: 80%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+}

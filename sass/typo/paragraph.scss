@@ -1,0 +1,30 @@
+.paragraph {
+    width: 506px;
+    color: #003DA6;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-p {
+    color: #FFF;
+
+text-align: center;
+font-family: Playfair Display;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+&__link {
+    color: #FFE401;
+font-family: Playfair Display;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration-line: underline;
+}
+}
