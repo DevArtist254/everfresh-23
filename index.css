@@ -36,8 +36,39 @@ html {
   --clr-300: #0D62AD;
   --clr-400: #003DA6;
   --clr-500: #000;
+  --fs-300: 1.2rem;
+  --fs-400: 1.4rem;
+  --fs-500: 1.8rem;
+  --fs-600: 2.4rem;
+  --fs-700: 3rem;
 }
-
+@media (max-width: 60rem) {
+  :root {
+    --fs-300: 1.2rem;
+    --fs-400: 1.4rem;
+    --fs-500: 1.8rem;
+    --fs-600: 2.4rem;
+    --fs-700: 3rem;
+  }
+}
+@media (max-width: 90rem) {
+  :root {
+    --fs-300: 1.2rem;
+    --fs-400: 1.4rem;
+    --fs-500: 1.8rem;
+    --fs-600: 2.4rem;
+    --fs-700: 3rem;
+  }
+}
+@media (max-width: 120rem) {
+  :root {
+    --fs-300: 1.2rem;
+    --fs-400: 1.4rem;
+    --fs-500: 1.8rem;
+    --fs-600: 2.4rem;
+    --fs-700: 3rem;
+  }
+}
 .card-main {
   width: 800px;
   height: 523px;

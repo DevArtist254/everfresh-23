@@ -1,6 +1,6 @@
 @use '../mixin/color.scss' as *;
-@use '../mixin/font.scss' as *;
 @use '../mixin/response.scss' as *;
+@use '../mixin/font.scss' as *;
 
 *,
 *::after,
@@ -18,6 +18,40 @@ html {
     @each $sect, $color in $colors {
         @each $clr, $val in $color {
             --#{$sect}-#{$clr}: #{$val};
+        }
+    }
+
+    @each $size, $fonts in $font-size {
+
+        @if $size==desktop {
+                @each $fs, $val in $fonts {
+                    --fs-#{$fs}: #{$val};
+                }       
+            }
+        
+
+        @include respond(phone){
+            @if $size==phone {
+                @each $fs, $val in $fonts {
+                    --fs-#{$fs}: #{$val};
+                }       
+            }
+        }
+
+        @include respond(tab-port){
+            @if $size==tab-port {
+                @each $fs, $val in $fonts {
+                    --fs-#{$fs}: #{$val};
+                }       
+            }
+        }
+
+        @include respond(tab-land){
+            @if $size==tab-land {
+                @each $fs, $val in $fonts {
+                    --fs-#{$fs}: #{$val};
+                }       
+            }
         }
     }
 }
