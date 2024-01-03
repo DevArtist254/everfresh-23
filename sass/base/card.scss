@@ -1,54 +1,79 @@
 .card-main {
-    width: 596px;
+    width: 800px;
     height: 523px;
     border-radius: 15px;
     background-color: #FFE401;
+    padding: 0 30px;
+
+    margin-right: 150px;
+    margin-bottom: 150px;
 
     &__heading {
         color: #000;
-text-align: center;
-font-family: Playfair Display;
-font-size: 30px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+        text-align: center;
+        font-family: Playfair Display;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__sec {
+        margin: 3%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
     &__img {
-        width: 295px;
-height: 211px;
+        width: 360px;
+        height: 300px;
     }
 
     &__paragraph {
         color: #000;
-text-align: center;
-font-family: Lato;
-font-size: 24px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
+        text-align: center;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
     }
 }
 
 
 .card-drop {
-    &__heading {
-color: #003DA6;
+    width: 360px;
 
-font-family: Playfair Display;
-font-size: 48px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    text-align: center;
+    
+    &__heading {
+        color: #003DA6;
+
+        font-family: Playfair Display;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
     &__p {
         color: #003DA6;
-text-align: center;
-font-family: Lato;
-font-size: 24px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
+        text-align: center;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
     }
+}
+
+
+.mCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-right: 116px;
 }

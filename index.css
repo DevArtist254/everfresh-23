@@ -1,8 +1,51 @@
+.ctrTxt {
+  text-align: center;
+}
+
+.endTxt {
+  text-align: end;
+}
+
+/*
+*Media Query Manager
+
+Breakpoints : Screens     : nickname
+
+0 - 600 px  : phone       : phone
+600 - 900 px: tab-port    : tab-port
+900 - 1200px: tab-land
+1200-1800px : Desktop
+1800 px + Big Monitor    
+
+*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --clr-100: #fff;
+  --clr-200: #FFE401;
+  --clr-300: #0D62AD;
+  --clr-400: #003DA6;
+  --clr-500: #000;
+}
+
 .card-main {
-  width: 596px;
+  width: 800px;
   height: 523px;
   border-radius: 15px;
   background-color: #FFE401;
+  padding: 0 30px;
+  margin-right: 150px;
+  margin-bottom: 150px;
 }
 .card-main__heading {
   color: #000;
@@ -13,9 +56,16 @@
   font-weight: 400;
   line-height: normal;
 }
+.card-main__sec {
+  margin: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .card-main__img {
-  width: 295px;
-  height: 211px;
+  width: 360px;
+  height: 300px;
 }
 .card-main__paragraph {
   color: #000;
@@ -27,6 +77,10 @@
   line-height: normal;
 }
 
+.card-drop {
+  width: 360px;
+  text-align: center;
+}
 .card-drop__heading {
   color: #003DA6;
   font-family: Playfair Display;
@@ -45,17 +99,29 @@
   line-height: normal;
 }
 
-.img {
-  width: 50%;
+.mCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 116px;
 }
 
-.main-content__officeImg {
-  width: 1000px;
-  height: 1000px;
+.footer {
+  background-image: url("/Assests/Images/footer.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
 }
-.main-content__waterImg {
-  width: 732px;
-  height: 650px;
+
+.main-video {
+  width: 75%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
 }
 
 .main-index {
@@ -71,21 +137,6 @@
   justify-content: end;
 }
 
-.main-video {
-  width: 75%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  z-index: -1;
-}
-
-.mCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 116px;
-}
-
 .main-content {
   background-image: url("./Assests/Images/bdg-1.png");
   background-size: 100% 100%;
@@ -98,11 +149,106 @@
   margin: 0 auto;
 }
 .main-content__content {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+}
+.main-content__content--textBlock {
+  width: 30%;
+}
+.main-content__content--imageBlock {
+  width: 60%;
+}
+
+.main-content-1 {
+  width: 100%;
+  margin-bottom: 10%;
+}
+.main-content-1__vw {
+  width: 80%;
+  margin: 0 auto;
+}
+.main-content-1__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.main-content-1__content--textBlock {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content-1__content--imageBlock {
+  width: 50%;
+}
+.main-content-1__cards {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main-content-1__card {
+  width: 500px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-sec-1 {
+  background-image: url("/Assests/Images/water-bottles-everfresh-1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.main-sec-1__heading {
+  border-left: 8px solid white;
+  padding-left: 20px;
+  margin-bottom: 100px;
+}
+.main-sec-1__vw {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.main-sec-1__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-sec-2__vw {
+  width: 80%;
+  margin: 0 auto;
+}
+.main-sec-2__cards-drop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img {
+  width: 100%;
+}
+
+.main-content__officeImg {
+  width: 1000px;
+  height: 1000px;
+}
+.main-content__waterImg {
+  width: 1000px;
+  height: 1000px;
 }
 
 .main-heading {

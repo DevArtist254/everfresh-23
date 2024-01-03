@@ -1,0 +1,23 @@
+@use '../mixin/color.scss' as *;
+@use '../mixin/font.scss' as *;
+@use '../mixin/response.scss' as *;
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    @each $sect, $color in $colors {
+        @each $clr, $val in $color {
+            --#{$sect}-#{$clr}: #{$val};
+        }
+    }
+}
