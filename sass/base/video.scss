@@ -1,7 +1,13 @@
+@use '../mixin/response.scss' as *;
+
 .main-video {
     width: 75%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     z-index: -1;
+
+    @include respond(phone){
+        width: 100%;
+    }
 }

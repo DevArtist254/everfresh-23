@@ -1,3 +1,5 @@
+@use '../mixin/response.scss' as *;
+
 //Util
 .ctrTxt {
     text-align: center;
@@ -5,5 +7,7 @@
 
 .endTxt {
     text-align: end;
-
+    @include respond(phone){
+        text-align: center;
+    }
 }

@@ -1,3 +1,5 @@
+@use '../mixin/response.scss' as *;
+
 .card-main {
     width: 800px;
     height: 523px;
@@ -7,6 +9,13 @@
 
     margin-right: 150px;
     margin-bottom: 150px;
+
+    @include respond(desktop){
+        width: 420px;
+        height: fit-content;
+
+        margin-right: initial;
+    }
 
     &__heading {
         color: #000;
@@ -24,6 +33,10 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+
+        @include respond(desktop){
+        flex-wrap: wrap;
+    }
     }
 
     &__img {
@@ -76,4 +89,12 @@
     align-items: center;
 
     margin-right: 116px;
+
+    @include respond(phone) {
+        margin-right: initial;
+    }
+
+    @include respond(desktop) {
+        margin-right: initial;
+    }
 }

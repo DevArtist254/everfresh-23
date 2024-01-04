@@ -1,11 +1,3 @@
-.ctrTxt {
-  text-align: center;
-}
-
-.endTxt {
-  text-align: end;
-}
-
 /*
 *Media Query Manager
 
@@ -18,6 +10,19 @@ Breakpoints : Screens     : nickname
 1800 px + Big Monitor    
 
 */
+.ctrTxt {
+  text-align: center;
+}
+
+.endTxt {
+  text-align: end;
+}
+@media (max-width: 60rem) {
+  .endTxt {
+    text-align: center;
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -28,6 +33,7 @@ Breakpoints : Screens     : nickname
 
 html {
   font-size: 62.5%;
+  width: fit-content;
 }
 
 :root {
@@ -78,6 +84,13 @@ html {
   margin-right: 150px;
   margin-bottom: 150px;
 }
+@media (max-width: 180rem) {
+  .card-main {
+    width: 420px;
+    height: fit-content;
+    margin-right: initial;
+  }
+}
 .card-main__heading {
   color: #000;
   text-align: center;
@@ -93,6 +106,11 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 180rem) {
+  .card-main__sec {
+    flex-wrap: wrap;
+  }
 }
 .card-main__img {
   width: 360px;
@@ -136,6 +154,16 @@ html {
   align-items: center;
   margin-right: 116px;
 }
+@media (max-width: 60rem) {
+  .mCard {
+    margin-right: initial;
+  }
+}
+@media (max-width: 180rem) {
+  .mCard {
+    margin-right: initial;
+  }
+}
 
 .footer {
   background-image: url("/Assests/Images/footer.png");
@@ -154,6 +182,11 @@ html {
   position: absolute;
   z-index: -1;
 }
+@media (max-width: 60rem) {
+  .main-video {
+    width: 100%;
+  }
+}
 
 .main-index {
   position: relative;
@@ -167,6 +200,13 @@ html {
   align-items: end;
   justify-content: end;
 }
+@media (max-width: 60rem) {
+  .main-index__vw {
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .main-content {
   background-image: url("./Assests/Images/bdg-1.png");
@@ -174,6 +214,11 @@ html {
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
+}
+@media (max-width: 90rem) {
+  .main-content {
+    background-color: var(--clr-200);
+  }
 }
 .main-content__vw {
   width: 80%;
@@ -187,11 +232,27 @@ html {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 90rem) {
+  .main-content__content {
+    text-align: center;
+  }
+}
 .main-content__content--textBlock {
   width: 30%;
 }
-.main-content__content--imageBlock {
+@media (max-width: 90rem) {
+  .main-content__content--textBlock {
+    width: initial;
+  }
+}
+.main-content__content--imgBlock {
   width: 60%;
+}
+@media (max-width: 90rem) {
+  .main-content__content--imgBlock {
+    width: initial;
+    margin-bottom: 10px;
+  }
 }
 
 .main-content-1 {
@@ -210,6 +271,12 @@ html {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 90rem) {
+  .main-content-1__content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
 .main-content-1__content--textBlock {
   width: 50%;
   display: flex;
@@ -227,6 +294,12 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 60rem) {
+  .main-content-1__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .main-content-1__card {
   width: 500px;
   height: 360px;
@@ -234,16 +307,37 @@ html {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 60rem) {
+  .main-content-1__card {
+    height: 560px;
+  }
+}
+@media (max-width: 180rem) {
+  .main-content-1__card {
+    width: 360px;
+  }
+}
 
 .main-sec-1 {
   background-image: url("/Assests/Images/water-bottles-everfresh-1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+@media (max-width: 90rem) {
+  .main-sec-1 {
+    background-image: url("/Assests/Images/water-bottles 2.jpg");
+  }
+}
 .main-sec-1__heading {
   border-left: 8px solid white;
   padding-left: 20px;
   margin-bottom: 100px;
+}
+@media (max-width: 90rem) {
+  .main-sec-1__heading {
+    border-left: none;
+    text-align: center;
+  }
 }
 .main-sec-1__vw {
   width: 80%;
@@ -256,6 +350,12 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 90rem) {
+  .main-sec-1__cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .main-sec-2__vw {
@@ -277,23 +377,40 @@ html {
   width: 1000px;
   height: 1000px;
 }
+@media (max-width: 180rem) {
+  .main-content__officeImg {
+    width: 100%;
+    height: 100%;
+  }
+}
 .main-content__waterImg {
   width: 1000px;
   height: 1000px;
 }
+@media (max-width: 180rem) {
+  .main-content__waterImg {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .main-heading {
-  color: #0D62AD;
-  font-family: Playfair Display;
+  color: var(--clr-300);
+  font-family: "Playfair Display", san-serif;
   font-size: 180px;
   font-style: normal;
   font-weight: 400;
-  line-height: 0;
+  line-height: initial;
+}
+@media (max-width: 180rem) {
+  .main-heading {
+    font-size: 120px;
+  }
 }
 
 .sub-heading {
-  color: #003DA6;
-  font-family: Playfair Display;
+  color: var(--clr-400);
+  font-family: "Playfair Display", san-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -302,8 +419,8 @@ html {
 }
 
 .tri-heading {
-  color: #FFF;
-  font-family: Playfair Display;
+  color: var(--clr-100);
+  font-family: "Playfair Display", san-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -312,19 +429,24 @@ html {
 }
 
 .main-qoute {
-  color: #003DA6;
-  font-family: Whisper;
+  color: var(--clr-400);
+  font-family: "Whisper", san-serif;
   font-size: 72px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-align: center;
 }
+@media (max-width: 180rem) {
+  .main-qoute {
+    font-size: 60px;
+  }
+}
 
 .paragraph {
   width: 506px;
-  color: #003DA6;
-  font-family: Lato;
+  color: var(--clr-400);
+  font-family: "Lato", san-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -332,17 +454,17 @@ html {
 }
 
 .footer-p {
-  color: #FFF;
+  color: var(--clr-100);
   text-align: center;
-  font-family: Playfair Display;
+  font-family: "Playfair Display", san-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 .footer-p__link {
-  color: #FFE401;
-  font-family: Playfair Display;
+  color: var(--clr-200);
+  font-family: "Playfair Display", san-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;

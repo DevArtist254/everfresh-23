@@ -1,7 +1,9 @@
+@use "../mixin/var.scss" as *;
+
 .paragraph {
     width: 506px;
-    color: #003DA6;
-    font-family: Lato;
+    color: var(--clr-400);
+    font-family: $font-fam-pri;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -9,22 +11,22 @@
 }
 
 .footer-p {
-    color: #FFF;
+    color: var(--clr-100);
 
-text-align: center;
-font-family: Playfair Display;
-font-size: 48px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    text-align: center;
+    font-family: $font-fam-sec;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 
 &__link {
-    color: #FFE401;
-font-family: Playfair Display;
-font-size: 48px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-decoration-line: underline;
-}
+    color: var(--clr-200);
+    font-family: $font-fam-sec;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    }
 }

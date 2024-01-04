@@ -1,3 +1,5 @@
+@use '../mixin/response.scss' as *;
+
 .main-index {
     position: relative;
     height: 100vh;
@@ -10,6 +12,13 @@
         flex-direction: column;
         align-items: end;
         justify-content: end;
+
+        @include respond(phone) {
+            width: fit-content;
+            
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
@@ -17,6 +26,10 @@
     background-image: url("./Assests/Images/bdg-1.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+
+    @include respond(tab-port){
+        background-color: var(--clr-200);
+    }
 
     width: 100%;
     height: 100vh;
@@ -29,6 +42,10 @@
     &__content {
         width: 100%;
 
+        @include respond(tab-port){
+            text-align: center;
+        }
+
         //modi
         display: flex;
         flex-direction: row;
@@ -39,11 +56,20 @@
         &--textBlock {
             //modi
             width: 30%;
+
+            @include respond(tab-port){
+                width: initial;
+            }
         }
 
-        &--imageBlock {
+        &--imgBlock {
             //modi
             width: 60%;
+
+            @include respond(tab-port){
+                width: initial;
+                margin-bottom: 10px;
+            }
         }
     }
 }
@@ -68,6 +94,11 @@
         align-items: center;
         justify-content: center;
 
+            @include respond(tab-port){
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+        
         &--textBlock {
             //modi
             width: 50%;
@@ -91,6 +122,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+
+         @include respond(phone){
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__card {
@@ -98,6 +134,13 @@
         width: 500px;
         height: 360px;
 
+        @include respond(phone){
+            height: 560px;
+        }
+
+        @include respond(desktop){
+            width: 360px;
+        }
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -109,10 +152,18 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
+    @include respond(tab-port){
+            background-image: url("/Assests/Images/water-bottles\ 2.jpg");
+        }
     &__heading {
         border-left: 8px solid white;
         padding-left: 20px;
         margin-bottom: 100px;
+
+        @include respond(tab-port){
+            border-left: none;
+            text-align: center;
+        }
     }
 
     &__vw {
@@ -127,6 +178,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @include respond(tab-port){
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
