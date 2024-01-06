@@ -1,21 +1,12 @@
 @use '../mixin/response.scss' as *;
 
 .card-main {
-    width: 800px;
-    height: 523px;
+    max-width: 800px;
+    min-height: 523px;
     border-radius: 15px;
     background-color: #FFE401;
-    padding: 0 30px;
-
-    margin-right: 150px;
-    margin-bottom: 150px;
-
-    @include respond(desktop){
-        width: 420px;
-        height: fit-content;
-
-        margin-right: initial;
-    }
+    padding: 1rem 4rem;
+    margin-bottom: 3rem;
 
     &__heading {
         color: #000;
@@ -31,17 +22,15 @@
         margin: 3%;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
 
-        @include respond(desktop){
-        flex-wrap: wrap;
-    }
     }
 
     &__img {
-        width: 360px;
-        height: 300px;
+        max-width: 360px;
+        max-height: 300px;
     }
 
     &__paragraph {
@@ -57,7 +46,7 @@
 
 
 .card-drop {
-    width: 360px;
+    max-width: 360px;
 
     text-align: center;
     
@@ -88,13 +77,8 @@
     flex-direction: column;
     align-items: center;
 
-    margin-right: 116px;
-
-    @include respond(phone) {
-        margin-right: initial;
+    &__img {
+        width: 75%;
     }
-
-    @include respond(desktop) {
-        margin-right: initial;
-    }
+    // margin-right: 116px;
 }

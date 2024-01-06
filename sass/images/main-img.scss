@@ -3,26 +3,3 @@
 .img {
     width: 100%;
 }
-
-.main-content {
-
-    &__officeImg{
-        width: 1000px;
-        height: 1000px;
-
-        @include respond(desktop) {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    &__waterImg {
-        width: 1000px;
-        height: 1000px;
-
-        @include respond(desktop) {
-            width: 100%;
-            height: 100%;
-        }
-    }
-}

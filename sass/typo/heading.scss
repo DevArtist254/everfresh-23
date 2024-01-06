@@ -4,14 +4,11 @@
 .main-heading {
     color: var(--clr-300);
     font-family: $font-fam-sec;
-    font-size: 180px;
+    //font-size: 18rem;
     font-style: normal;
     font-weight: 400;
     line-height: initial;
 
-    @include respond(desktop){
-        font-size: 120px;
-    }
 }
 
 .sub-heading {

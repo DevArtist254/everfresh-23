@@ -4,13 +4,9 @@
 .main-qoute {
         color: var(--clr-400);
         font-family: $font-fam-tri;
-        font-size: 72px;
+        // font-size: 72px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         text-align: center;
-
-        @include respond(desktop){
-                font-size: 60px;
-        }
 }

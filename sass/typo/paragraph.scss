@@ -1,7 +1,6 @@
 @use "../mixin/var.scss" as *;
 
 .paragraph {
-    width: 506px;
     color: var(--clr-400);
     font-family: $font-fam-pri;
     font-size: 24px;

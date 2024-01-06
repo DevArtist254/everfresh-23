@@ -7,7 +7,4 @@
 
 .endTxt {
     text-align: end;
-    @include respond(phone){
-        text-align: center;
-    }
 }
