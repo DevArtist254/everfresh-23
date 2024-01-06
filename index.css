@@ -70,7 +70,7 @@ html {
   }
 }
 .card-main {
-  max-width: 800px;
+  max-width: 600px;
   min-height: 523px;
   border-radius: 15px;
   background-color: #FFE401;
@@ -138,13 +138,26 @@ html {
 .mCard__img {
   width: 75%;
 }
+@media (min-width: 90rem) {
+  .mCard {
+    margin-right: 40%;
+    margin-bottom: 10%;
+  }
+}
 
 .main-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
+}
+@media (min-width: 90rem) {
+  .main-video {
+    width: 75%;
+  }
 }
 
 .main-index {
@@ -154,11 +167,29 @@ html {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 90rem) {
+  .main-index {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+}
+
+.main-content {
+  background-color: var(--clr-200);
+}
+@media (min-width: 90rem) {
+  .main-content {
+    background-image: url("/Assests/Images/bdg-1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: initial;
+  }
+}
 
 .main-content,
 .main-content-1 {
   width: 100%;
-  padding: 10% 4%;
 }
 .main-content__vw,
 .main-content-1__vw {
@@ -168,10 +199,63 @@ html {
 .main-content__content,
 .main-content-1__content {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
   text-align: center;
+}
+
+.main-content {
+  padding-bottom: 12%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.main-content__content {
+  flex-direction: row;
+}
+@media (min-width: 60rem) {
+  .main-content__content--textBlock {
+    width: 38%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .main-content__content--imgBlock {
+    width: 60%;
+  }
+}
+
+.main-content-1 {
+  padding: 10% 4%;
+}
+.main-content-1__content {
+  flex-direction: row-reverse;
+}
+@media (min-width: 60rem) {
+  .main-content-1__content--textBlock {
+    width: 50%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-content-1__content--imageBlock {
+    width: 50%;
+  }
+}
+.main-content-1__cards {
+  width: 100%;
+}
+@media (min-width: 60rem) {
+  .main-content-1__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-content-1__cards__card {
+    width: 30%;
+  }
 }
 
 .main-sec-1 {
@@ -182,12 +266,40 @@ html {
   background-repeat: no-repeat;
   padding: 20% 0;
 }
+@media (min-width: 90rem) {
+  .main-sec-1 {
+    background-image: url("/Assests/Images/water-bottles-everfresh-1.png");
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-size: 100% 100%;
+    background-color: initial;
+  }
+}
 .main-sec-1__vw {
   width: 90%;
   margin: 0 auto;
 }
 .main-sec-1__heading {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  border-left: 5px solid #fff;
+  padding-left: 2rem;
+}
+.main-sec-1__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-sec-2 {
+  width: 100%;
+  padding: 10% 4%;
+}
+.main-sec-2__cards-drop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .img {
@@ -200,6 +312,11 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: initial;
+}
+@media (min-width: 90rem) {
+  .main-heading {
+    font-size: 9rem;
+  }
 }
 
 .sub-heading {
@@ -229,6 +346,11 @@ html {
   font-weight: 400;
   line-height: normal;
   text-align: center;
+}
+@media (min-width: 90rem) {
+  .main-qoute {
+    font-size: 4.5rem;
+  }
 }
 
 .paragraph {

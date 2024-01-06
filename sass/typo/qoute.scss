@@ -9,4 +9,8 @@
         font-weight: 400;
         line-height: normal;
         text-align: center;
+
+        @include respond(tab-port){
+                font-size: 4.5rem;
+        }
 }

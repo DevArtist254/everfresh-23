@@ -7,12 +7,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include respond(tab-port){
+
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+}
+
+.main-content {
+    background-color: var(--clr-200);
+
+    @include respond(tab-port){
+        background-image: url("/Assests/Images/bdg-1.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-color: initial;
+    }
 }
 
 .main-content,
 .main-content-1 {
     width: 100%;
-    padding: 10% 4%;
 
     &__vw {
         width: 90%;
@@ -21,20 +38,98 @@
 
     &__content {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
         width: 100%;
 
         text-align: center;
     }
 }
 
+.main-content {
+    padding-bottom: 12%;
+    padding-left: 4%;
+    padding-right: 4%;
+
+    &__content {
+        flex-direction: row;
+    }
+
+    @include respond(phone) {
+
+        &__content {
+            &--textBlock {
+                width: 38%;
+    
+                text-align: start;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+            }
+                
+            &--imgBlock {
+                width: 60%;
+            }
+        }
+    }
+}
+
+
+.main-content-1 {
+    padding: 10% 4%;
+
+    &__content {
+        flex-direction: row-reverse;
+    }
+
+    @include respond(phone) {
+        &__content {
+            &--textBlock {
+                width: 50%;
+    
+                text-align: start;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            
+            &--imageBlock {
+                width: 50%;
+            }
+        }
+    }
+
+    &__cards {
+        width: 100%;
+
+        @include respond(phone) {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+            &__card {
+                width: 30%;
+            }
+        }
+    }
+
+}
 .main-sec-1 {
     width: 100%;
     background-image: url("/Assests/Images/water-bottles\ 2.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include respond(tab-port){
+        background-image: url("/Assests/Images/water-bottles-everfresh-1.png");
+        background-repeat: no-repeat;
+        background-attachment: initial;
+        background-size: 100% 100%;
+        background-color: initial;
+    }
+
 
     padding: 20% 0;
 
@@ -44,6 +139,27 @@
     }
 
     &__heading {
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
+        border-left: 5px solid #fff;
+        padding-left: 2rem;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.main-sec-2 {
+    width: 100%;
+    padding: 10% 4%;
+
+    &__cards-drop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }

@@ -4,11 +4,13 @@
 .main-heading {
     color: var(--clr-300);
     font-family: $font-fam-sec;
-    //font-size: 18rem;
     font-style: normal;
     font-weight: 400;
     line-height: initial;
 
+    @include respond(tab-port){
+        font-size: 9rem;
+    }
 }
 
 .sub-heading {
