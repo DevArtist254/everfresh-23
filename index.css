@@ -318,6 +318,11 @@ html {
     font-size: 9rem;
   }
 }
+@media (min-width: 180rem) {
+  .main-heading {
+    font-size: 18rem;
+  }
+}
 
 .sub-heading {
   color: var(--clr-400);

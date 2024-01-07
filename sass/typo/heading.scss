@@ -7,9 +7,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: initial;
-
+    
     @include respond(tab-port){
         font-size: 9rem;
+    }
+
+    @include respond(desktop){
+        font-size: 18rem;
     }
 }
 
