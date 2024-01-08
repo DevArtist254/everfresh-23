@@ -18,6 +18,39 @@ Breakpoints : Screens     : nickname
   text-align: end;
 }
 
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: var(--clr-100);
+  padding: 1% 5%;
+}
+.nav__lists {
+  display: none;
+}
+@media (min-width: 60rem) {
+  .nav__lists--item {
+    margin-left: 2rem;
+  }
+}
+
+.nav:hover .nav__lists {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 60rem) {
+  .nav,
+  .nav__lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 *,
 *::after,
 *::before {

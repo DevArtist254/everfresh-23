@@ -1,0 +1,44 @@
+@use '../mixin/response.scss' as *;
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+
+    background-color: var(--clr-100);
+    padding: 1% 5%;
+
+    &__lists {
+
+        display: none;
+
+        &--item {
+            @include respond(phone){
+                margin-left: 2rem;
+            }
+        }
+
+        // &--link {
+        // }
+    }
+}
+
+.nav:hover .nav__lists {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav,
+.nav__lists {
+    @include respond(phone) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
