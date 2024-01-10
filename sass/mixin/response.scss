@@ -12,26 +12,27 @@ Breakpoints : Screens     : nickname
 */
 
 @mixin respond($breakpont) {
-    @if $breakpont==phone {
-        @media (min-width: 60rem) {
+    @if $breakpont==desktop {
+        @media (min-width: 180rem) {
             @content;
         }
     }
-
+    
+    
+    @if $breakpont==tab-land {
+        @media (min-width: 120rem) {
+            @content;
+        }
+    }
+    
     @if $breakpont==tab-port {
         @media (min-width: 90rem) {
             @content;
         }
     }
 
-    @if $breakpont==tab-land {
-        @media (min-width: 120rem) {
-            @content;
-        }
-    }
-
-    @if $breakpont==desktop {
-        @media (min-width: 180rem) {
+    @if $breakpont==phone {
+        @media (min-width: 60rem) {
             @content;
         }
     }

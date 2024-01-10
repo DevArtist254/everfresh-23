@@ -1,12 +1,19 @@
 @use '../mixin/response.scss' as *;
 
 .card-main {
-    max-width: 600px;
     min-height: 523px;
     border-radius: 15px;
     background-color: #FFE401;
     padding: 1rem 4rem;
     margin-bottom: 3rem;
+    
+    @include respond(phone){
+        max-width: 450px;
+    }
+
+    @include respond(tab-port){
+        max-width: 710px;
+    }
 
     &__heading {
         color: #000;
