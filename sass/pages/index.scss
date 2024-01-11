@@ -20,10 +20,43 @@
     background-color: var(--clr-200);
 
     @include respond(tab-port){
-        background-image: url("/Assests/Images/bdg-1.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-color: initial;
+    }
+}
+
+
+.wave1{
+    background-color: var(--clr-200);
+
+    @include respond(tab-port){
+        background-image: url("./Assests/Images/bdg-1.png");
+        background-color: initial;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.wave2{
+    background-color: var(--clr-200);
+
+    @include respond(tab-port){
+        background-image: url("./Assests/Images/Rectangle 17.png");
+        background-color: initial;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.wave3{
+    background-color: var(--clr-200);
+
+    @include respond(tab-port){
+        background-image: url("./Assests/Images/Rectangle 18.png");
+        background-color: initial;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
     }
 }
 
@@ -115,8 +148,8 @@
     }
 
 }
+
 .main-sec-1 {
-    width: 100%;
     background-image: url("/Assests/Images/water-bottles\ 2.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -129,6 +162,12 @@
         background-size: 100% 100%;
         background-color: initial;
     }
+}
+
+.main-sec-1,
+.main-sec-3 {
+    width: 100%;
+    
 
 
     padding: 20% 0;

@@ -273,10 +273,45 @@ html {
 }
 @media (min-width: 90rem) {
   .main-content {
-    background-image: url("/Assests/Images/bdg-1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: initial;
+  }
+}
+
+.wave1 {
+  background-color: var(--clr-200);
+}
+@media (min-width: 90rem) {
+  .wave1 {
+    background-image: url("./Assests/Images/bdg-1.png");
+    background-color: initial;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.wave2 {
+  background-color: var(--clr-200);
+}
+@media (min-width: 90rem) {
+  .wave2 {
+    background-image: url("./Assests/Images/Rectangle 17.png");
+    background-color: initial;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.wave3 {
+  background-color: var(--clr-200);
+}
+@media (min-width: 90rem) {
+  .wave3 {
+    background-image: url("./Assests/Images/Rectangle 18.png");
+    background-color: initial;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 }
 
@@ -352,12 +387,10 @@ html {
 }
 
 .main-sec-1 {
-  width: 100%;
   background-image: url("/Assests/Images/water-bottles 2.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 20% 0;
 }
 @media (min-width: 90rem) {
   .main-sec-1 {
@@ -368,16 +401,25 @@ html {
     background-color: initial;
   }
 }
-.main-sec-1__vw {
+
+.main-sec-1,
+.main-sec-3 {
+  width: 100%;
+  padding: 20% 0;
+}
+.main-sec-1__vw,
+.main-sec-3__vw {
   width: 90%;
   margin: 0 auto;
 }
-.main-sec-1__heading {
+.main-sec-1__heading,
+.main-sec-3__heading {
   margin-bottom: 4rem;
   border-left: 5px solid #fff;
   padding-left: 2rem;
 }
-.main-sec-1__cards {
+.main-sec-1__cards,
+.main-sec-3__cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
