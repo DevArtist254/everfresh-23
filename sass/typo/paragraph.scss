@@ -1,5 +1,6 @@
 @use "../mixin/var.scss" as *;
 
+.nav__lists--link,
 .paragraph {
     color: var(--clr-400);
     font-family: $font-fam-pri;

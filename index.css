@@ -27,6 +27,15 @@ Breakpoints : Screens     : nickname
   background-color: var(--clr-100);
   padding: 1% 5%;
 }
+.nav__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav__logo--logo {
+  width: 6rem;
+  height: 6rem;
+}
 .nav__lists {
   display: none;
 }
@@ -493,6 +502,7 @@ html {
   }
 }
 
+.nav__lists--link,
 .paragraph {
   color: var(--clr-400);
   font-family: "Lato", san-serif;
