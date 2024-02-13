@@ -10,6 +10,13 @@
     z-index: -1;
 
     @include respond(tab-port){
+        position: relative;
+        top: initial;
+        left: initial;
+        z-index: initial;
+
         width: 75%;
+        height: 100vh;
+        object-fit: cover;
     }
 }

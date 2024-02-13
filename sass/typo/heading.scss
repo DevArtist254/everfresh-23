@@ -9,7 +9,7 @@
     line-height: initial;
     
     @include respond(tab-port){
-        font-size: 9rem;
+        font-size: 6rem;
     }
 
     @include respond(desktop){

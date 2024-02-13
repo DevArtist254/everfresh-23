@@ -1,5 +1,6 @@
 {
-     "prettier.htmlWhitespaceSensitivity": "ignore",
-     "prettier.tabWidth": 3,
-     "prettier.printWidth": 80
+   "prettier.htmlWhitespaceSensitivity": "ignore",
+   "prettier.tabWidth": 3,
+   "prettier.printWidth": 80,
+   "livePreview.defaultPreviewPath": "/index.html"
 }

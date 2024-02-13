@@ -190,12 +190,6 @@ html {
 .mCard__img {
   width: 75%;
 }
-@media (min-width: 90rem) {
-  .mCard {
-    margin-right: 40%;
-    margin-bottom: 10%;
-  }
-}
 
 .footer {
   display: flex;
@@ -258,7 +252,13 @@ html {
 }
 @media (min-width: 90rem) {
   .main-video {
+    position: relative;
+    top: initial;
+    left: initial;
+    z-index: initial;
     width: 75%;
+    height: 100vh;
+    object-fit: cover;
   }
 }
 
@@ -273,7 +273,15 @@ html {
   .main-index {
     display: flex;
     align-items: end;
-    justify-content: end;
+    justify-content: space-between;
+  }
+  .main-index__vw {
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -459,7 +467,7 @@ html {
 }
 @media (min-width: 90rem) {
   .main-heading {
-    font-size: 9rem;
+    font-size: 6rem;
   }
 }
 @media (min-width: 180rem) {
