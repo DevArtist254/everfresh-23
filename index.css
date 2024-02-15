@@ -26,6 +26,10 @@ Breakpoints : Screens     : nickname
   width: 100%;
   background-color: var(--clr-100);
   padding: 1% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav__logo {
   display: flex;
@@ -35,6 +39,22 @@ Breakpoints : Screens     : nickname
 .nav__logo--logo {
   width: 6rem;
   height: 6rem;
+}
+.nav__menu {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.nav__menu--menu-to-close, .nav__menu--menu-fold {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.nav__menu--menu-fold {
+  z-index: 2;
+}
+.nav__menu--menu-to-close {
+  z-index: 1;
 }
 .nav__lists {
   display: none;
